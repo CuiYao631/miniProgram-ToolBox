@@ -1,0 +1,24 @@
+<!--pages/home/home.wxml-->
+<view class="home">
+  <view class="my-swiper" >
+    <swiper indicator-dots="{{indicatorDots}}" style="height: 300px;" autoplay="{{autoplay}}" interval="{{interval}}"
+      duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <text class="child">{{item.resourcesId}}</text>
+          <image src="{{item.url}} "  class="slide-image" style="height: 300px;" >
+          </image>
+          
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- <text class="userinfo-nickname">微信名：{{UserName}}</text> -->
+  <view class="tui-table-view" style="margin-top: 20px;">
+    <block wx:for="{{navItems}}">
+      <view class="wrap-item {{item.isSplot ? 'exp' : ''}}">
+        <navigator url="../{{item.url}}" hover-class="navigator-hover">{{item.name}}</navigator>
+      </view>
+    </block>
+  </view>
+</view>

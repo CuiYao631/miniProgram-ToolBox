@@ -1,0 +1,37 @@
+<!--pages/Tool/list/list.wxml-->
+<!--列表页-->
+<view class='container'>
+  <!--等待框-->
+  <loading hidden="{{!loading}}">加载中...</loading>
+  <!--顶部标题栏-->
+  <view class='page-header'>
+    <text class='page-title'>{{title}}</text>
+  </view>
+  <!--列表-->
+  <view class='page-body' wx:for="{{list}}" wx:key="id">
+      <navigator url='../item/item?id={{item.id}}'>
+        <view class='item'>
+          <image class='poster' src='{{item.icon}}'></image>
+          <view class='meta'>
+            <text class='title'>{{item.name}}</text>
+          
+            <view class='artists'>
+              <text class='sub-title'>描述:{{item.desc}}({{item.desc}})</text>
+            </view>
+            
+            <view class='bottombar'>
+              <view class="author">
+                <text>时间：</text>
+                <text wx:key="id">{{item.name}}</text>
+              </view>
+              <view class="rating">
+                <text>下载率:</text>
+                <text>{{item.desc}}</text>
+              </view>
+            </view>
+            
+          </view>
+        </view>
+      </navigator>
+  </view>
+</view>

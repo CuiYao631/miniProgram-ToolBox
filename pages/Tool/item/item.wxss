@@ -1,0 +1,47 @@
+/* pages/Tool/item/item.wxss */
+.container{
+  background-color: rgb(185, 185, 185);
+}
+.meta {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1000rpx;
+  padding: 10rpx 30rpx;
+  background-color: #ffffff;
+  border-radius:20rpx;
+  margin: 20rpx;
+}
+.poster {
+  width: 100%;
+  height: 100%;
+  margin: 20rpx;
+  border-radius:20rpx;
+}
+.title {
+  font-size: 42rpx;
+  color: #444;
+}
+.info {
+  font-size: 18rpx;
+  color: #888;
+  margin-top: 20rpx;
+  width: 80%;
+}
+.summary {
+  height: 500rpx;
+  margin: 30rpx auto;
+  background-color: #ffffff;
+  border-radius:20rpx;
+  margin: 20rpx;
+}
+.label {
+  text-align: center;
+  display: block;
+}
+.content {
+  color: #666;
+  font-size: 20rpx;
+  padding: 10rpx;
+}

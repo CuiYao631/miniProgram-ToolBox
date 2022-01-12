@@ -1,0 +1,19 @@
+{
+  "name": "miniprogram-1",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.weixin.qq.com/wx_wxd7837ee92d0b209d/project.git"
+  },
+  "keywords": [],
+  "author": "XiaoCui",
+  "license": "ISC",
+  "dependencies": {
+    "qcloud-iotexplorer-appdev-sdk": "^1.1.14"
+  }
+}

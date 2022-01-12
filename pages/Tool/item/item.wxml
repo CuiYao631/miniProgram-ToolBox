@@ -1,0 +1,18 @@
+<!--pages/Tool/item/item.wxml-->
+<!--详情页-->
+<!--等待框-->
+<loading hidden="{{!loading}}">加载中...</loading>
+<!--滚动列表-->
+<scroll-view class='container' scroll-y="true" wx:if="true">
+  <view class='meta'>
+    <image class='poster' src='{{movie.icon}}' ></image>
+    <text class='title'>{{movie.name}}({{movie.name}})</text>
+    <text class='info'>类型：{{movie.desc}}</text>
+    <text class='info'>作者：{{movie.name}}</text>
+    <text class='info'>下载连接：{{movie.name}}</text>
+  </view>
+  <view class='summary'>
+    <text class='label'>使用说明</text>
+    <text class='content'>{{movie.desc}}</text>
+  </view>
+</scroll-view>

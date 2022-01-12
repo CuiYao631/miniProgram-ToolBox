@@ -1,0 +1,86 @@
+/* pages/Tool/list/list.wxss */
+.container{
+  background-color:#EEEEED;
+}
+.page-header {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1rpx solid rgb(255, 255, 255);
+  background-color: #ffffff;
+  border-radius:20rpx;
+  margin: 8rpx;
+}
+.page-title {
+  padding: 20rpx 40rpx;
+  color: #999;
+  font-size: 38rpx;
+  text-align: center;
+  
+}
+.page-body {
+  display: flex;
+  flex: 1;
+  width: 95%;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius:20rpx;
+  margin: 8rpx;
+}
+.item {
+  display: flex;
+  padding: 20rpx 20rpx;
+  cursor: pointer;
+}
+.item .poster {
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 20rpx;
+  border-radius:20rpx;
+}
+.item .meta {
+  flex: 1;
+}
+.item .meta .title,.item .meta .sub-title {
+  display: block;
+  margin-bottom: 15rpx;
+}
+.item .meta .title {
+  font-size: 32rpx;
+}
+.item .meta .sub-title {
+  font-size: 22rpx;
+  color: #c0c0c0;
+}
+.item .meta .artists {
+  font-size: 26rpx;
+  color: #999;
+}
+.item .bottombar {
+}
+.item .bottombar .author{
+  float:left;
+  font-size: 20rpx;
+  color: #ccc;
+  text-align: left;
+}
+.item .bottombar .rating{
+  float:right;
+  font-size: 20rpx;
+  color: #f74c31;
+  text-align: right;
+}
+.tips {
+  font-size: 28rpx;
+  text-align: center;
+  padding: 50rpx;
+  color: #ccc;
+}
+.tips image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.tips image,.tips text {
+  vertical-align: middle;
+}
