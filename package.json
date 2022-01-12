@@ -14,6 +14,8 @@
   "author": "XiaoCui",
   "license": "ISC",
   "dependencies": {
-    "qcloud-iotexplorer-appdev-sdk": "^1.1.14"
+    "qcloud-iotexplorer-appdev-sdk": "^1.1.14",
+    "unsplash-api": "^1.2.0",
+    "unsplash-js": "^7.0.15"
   }
 }

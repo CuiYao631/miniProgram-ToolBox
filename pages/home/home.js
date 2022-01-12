@@ -12,27 +12,27 @@ Page({
       {
         name:'配网',
         url:'wificonfig/wificonfig',
-        isSplot:true,
+        // isSplot:true,
       },
       {
         name:'工具',
         url:'Tool/list/list',
-        isSplot:true,
+        //isSplot:true,
       },
       {
         name:'文章',
         url:'out',
-        isSplot:true
+       // isSplot:true
+      },
+      {
+        name:'壁纸',
+        url:'wallpaper/wallpaper',
+       // isSplot:true
       },
       {
         name:'...',
         url:'bill',
-        isSplot:true
-      },
-      {
-        name:'...',
-        url:'bill',
-        isSplot:true
+       // isSplot:true
       },
       {
         name:'...',
@@ -41,17 +41,17 @@ Page({
       {
         name:'...',
         url:'bill',
-        isSplot:true
+       // isSplot:true
       },
       {
         name:'...',
         url:'bill',
-        isSplot:true
+        //isSplot:true
       },
       {
         name:'...',
         url:'bill',
-        isSplot:true
+       // isSplot:true
       },
     ]
   },

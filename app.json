@@ -1,13 +1,12 @@
 {
   "pages": [
-    
     "pages/welcome/welcome",
     "pages/home/home",
     "pages/Tool/list/list",
     "pages/Tool/item/item",
     "pages/wificonfig/wificonfig",
-    "pages/logs/logs"
-    
+    "pages/logs/logs",
+    "pages/wallpaper/wallpaper"
   ],
   "window": {
     "backgroundTextStyle": "light",
