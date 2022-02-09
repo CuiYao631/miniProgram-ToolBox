@@ -6,7 +6,8 @@
     "pages/Tool/item/item",
     "pages/wificonfig/wificonfig",
     "pages/logs/logs",
-    "pages/wallpaper/wallpaper"
+    "pages/wallpaper/wallpaper",
+    "pages/minio/minio"
   ],
   "window": {
     "backgroundTextStyle": "light",

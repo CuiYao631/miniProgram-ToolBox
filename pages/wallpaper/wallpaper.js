@@ -1,6 +1,6 @@
-var feaUrl = "https://unsplash.com/napi/photos/curated"
-var newUrl = "https://unsplash.com/napi/photos"
-var cliendID = "d69927c7ea5c770fa2ce9a2f1e3589bd896454f7068f689d8e41a25b54fa6042"
+var feaUrl = "https://api.unsplash.com/photos/random"
+var newUrl = "https://api.unsplash.com/photos"
+var cliendID = "9zCOBN8DocV7aNAzQbMh0GexYhg0kgRb9FSkv2nqd-Y"
 
 function fetchData (url, params, onSuccess) {
   wx.request({
@@ -23,13 +23,6 @@ Page({
     NewActived: false,
     page: 1
   },
-  modalTap: function(e) {
-    var index = e.target.dataset.item
-    this.setData({
-      user: this.data.latests[parseInt(index)].user,
-      modalHidden: false
-    })
-  },
   loadNewList: function(e) {
     var that = this
     var params = {
@@ -48,9 +41,11 @@ Page({
   loadFeaList: function() {
     var that = this
     var params = {
-      page: 1,
-      per_page: 24,
-      order_by: 'latest'
+      count:24,
+      query:"4K"
+      // page: 1,
+      // per_page: 24,
+      // order_by: 'latest'
     }
     fetchData(feaUrl, params, function (res) {
       that.setData({
@@ -80,12 +75,6 @@ Page({
       that.setData({
         latests: that.data.latests.concat(res.data),
       })
-    })
-  },
-  closeModal: function(e) {
-    this.setData({
-      user: {},
-      modalHidden: true
     })
   },
   onLoad: function () {

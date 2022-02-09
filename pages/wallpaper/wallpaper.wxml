@@ -13,22 +13,8 @@
       </div>
     </view>
     <block wx:for="{{ latests }}" wx:for-item="photo" wx:for-index="idx">
-      <modal 
-        title="@{{ user.username }}" 
-        hidden="{{modalHidden}}" 
-        no-cancel 
-        confirm-text="Back"
-        bindconfirm="closeModal"
-        >
-        <view class="profile">
-          <image class="profile-avatar" src="{{ user.profile_image.large }}"></image>
-          <text class="profile-info">{{ user.total_likes }} likes  {{ user.total_photos }} photos</text>
-          <text class="profile-name">{{ user.name }}</text>
-          <text class="profile-bio">{{ user.bio }}</text>
-        </view>
-      </modal>
       <view class="photo">
-        <image src="{{ photo.urls.regular }}"></image>
+        <image class="image" src="{{ photo.urls.regular }}"></image>
         <view class="user" bindtap="modalTap" data-item="{{ idx }}">{{ photo.user.name }}</view>
       </view>
     </block>
@@ -39,12 +25,4 @@
       </div>
     </view>
   </scroll-view>
-  <view class="footer">
-    <view class="desc">
-      💝Made with Unsplash
-    </view>
-    <view class="me">
-      @JackeyGao
-    </view>
-  </view>
 </view>
